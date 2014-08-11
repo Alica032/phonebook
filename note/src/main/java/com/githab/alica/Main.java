@@ -9,7 +9,7 @@ public class Main {
     private final PhoneBook book;
     private static final String email ="([a-z0-9_-]+\\.)*[a-z0-9_-]+@[a-z0-9_-]+(\\.[a-z0-9_-]+)*\\.[a-z]{2,6}";
     private static final String phone = "((8|\\+7)[\\- ]?)?(\\(?\\d{3}\\)?[\\- ]?)?[\\d\\- ]{7,10}";
-    private static final String name = "([a-zA-Z]){1}([a-zA-Z]){1,15}";
+    private static final String name = "([a-zA-Z]){1}([a-z]){1,15}";
     private Matcher matcher;
     private static final Pattern PatternAddRemove = Pattern.compile("^(add||remove) " + name + " "+ phone + " " + email + "$");
     private static final Pattern PatternSearch = Pattern.compile("^search" + " " + name + "$");
