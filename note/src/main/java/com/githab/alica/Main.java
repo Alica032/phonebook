@@ -56,7 +56,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        File PhoneFile = new File("src/main/resources/file.txt");
+        File PhoneFile = new File("src/main/java/file.txt");
         PhoneBook book = PhoneBook.readFromCSV(PhoneFile);
         new Main(book).run();
         book.save(PhoneFile);
